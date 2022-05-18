@@ -7,7 +7,7 @@
     padding: 20px;
 }
 
-.income-area {
+.section-area {
     border: 1px solid #d3ecef;
     background-color: #abcacd;
     border-radius: 8px;
@@ -32,4 +32,29 @@
 .form-area input {
     font-size: 18px;
     padding: 10px 20px;
+}
+
+.monthly-balance h5 {
+    margin-bottom: 4px;
+}
+
+.expenses button {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.save-amount button {
+    padding: 10px 29px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.save-area input {
+    display: inline-block;
+    width: 81%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
 }

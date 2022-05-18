@@ -20,19 +20,19 @@
     <main>
         <div class="container">
             <section class="buget-section">
-                <h1>Monthly CashDeal</h1>
+                <h1 class="text-center py-4 fw-bold">Monthly CashDeal</h1>
                 <div class="row buget-body">
-                    <div class="col-lg-6 col-sm-12 bg-success">
-                        <img class="img-fluid" src="images/bg-money.jpg" alt="bg-money">
+                    <div class="col-lg-6 col-sm-12">
+                        <!-- <img class="img-fluid" src="images/bg-money.jpg" alt="bg-money"> -->
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <div class="form-area">
-                            <div class="income-area">
+                            <div class="section-area income">
                                 <h2>Income</h2>
                                 <label for="income" class="form-label">Income : </label>
                                 <input type="text" class="form-control" id="income">
                             </div>
-                            <div class="income-area">
+                            <div class="section-area expenses">
                                 <h2>Expenses</h2>
                                 <form action="">
                                     <!-- Food Expense -->
@@ -52,8 +52,50 @@
                                         <label for="clothes" class="form-label">Clothes : </label>
                                         <input type="text" class="form-control" id="clothes">
                                     </div>
+                                    <button class="btn btn-warning py-2 px-4 my-4">Calculator</button>
+                                    <div class="monthly-balance bg-info row my-4 mx-1">
+                                        <div class="col-lg-6 col-sm-12 bg-danger rounded-start">
+                                            <div class="d-flex justify-content-between  py-2 text-white ">
+                                                <h5>Total Expenses: </h5>
+                                                <h5>00</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12  bg-success rounded-end rounded-sm">
+                                            <div class="d-flex justify-content-between py-2 text-white">
+                                                <h5>Balance:</h5>
+                                                <h5>00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
+                            <div class="section-area save-amount">
+                                <h2>Save Amount</h2>
+
+                                <!-- Save Amount -->
+                                <label for="save-input" class="form-label">Save Amount : </label>
+
+                                <div class="save-area">
+                                    <input type="text" class="form-control" id="save-input" placeholder="How percent amount do you want to save?">
+                                    <button class="bg-warning">Save</button>
+                                </div>
+
+                                <div class="monthly-balance row my-4 mx-1">
+                                    <div class="col-sm-12 bg-light rounded">
+                                        <div class="d-flex justify-content-between py-2">
+                                            <h5>Saving Amount: </h5>
+                                            <h5>00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 bg-secondary rounded text-white">
+                                        <div class="d-flex justify-content-between py-2">
+                                            <h5>Remaining Balance:</h5>
+                                            <h5>00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
