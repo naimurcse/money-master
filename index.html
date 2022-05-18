@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -20,12 +21,40 @@
         <div class="container">
             <section class="buget-section">
                 <h1>Monthly CashDeal</h1>
-                <div class="row">
+                <div class="row buget-body">
                     <div class="col-lg-6 col-sm-12 bg-success">
-                        <h1>Image Area</h1>
+                        <img class="img-fluid" src="images/bg-money.jpg" alt="bg-money">
                     </div>
-                    <div class="col-lg-6 col-sm-12 bg-primary">
-                        <h1>Form Area</h1>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="form-area">
+                            <div class="income-area">
+                                <h2>Income</h2>
+                                <label for="income" class="form-label">Income : </label>
+                                <input type="text" class="form-control" id="income">
+                            </div>
+                            <div class="income-area">
+                                <h2>Expenses</h2>
+                                <form action="">
+                                    <!-- Food Expense -->
+                                    <div class="input-area">
+                                        <label for="food" class="form-label">Food : </label>
+                                        <input type="text" class="form-control" id="food">
+                                    </div>
+
+                                    <!-- Rent Expense -->
+                                    <div class="input-area">
+                                        <label for="rent" class="form-label">Rent : </label>
+                                        <input type="text" class="form-control" id="rent">
+                                    </div>
+
+                                    <!-- Clothes Expense -->
+                                    <div class="input-area">
+                                        <label for="clothes" class="form-label">Clothes : </label>
+                                        <input type="text" class="form-control" id="clothes">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,35 @@
+.buget-body {
+    background-color: #c1d4d6;
+    border-radius: 15px;
+}
+
+.form-area {
+    padding: 20px;
+}
+
+.income-area {
+    border: 1px solid #d3ecef;
+    background-color: #abcacd;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    margin-bottom: 15px;
+}
+
+.form-area h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.form-area label {
+    font-size: 20px;
+}
+
+.form-area input {
+    font-size: 18px;
+    padding: 10px 20px;
+}
