@@ -29,30 +29,30 @@
                         <div class="form-area">
                             <div class="section-area income">
                                 <h2>Income</h2>
-                                <label for="income" class="form-label">Income : </label>
-                                <input type="text" class="form-control" id="income">
+                                <label for="income-input" class="form-label">Income : </label>
+                                <input type="text" class="form-control" id="income-input">
                             </div>
                             <div class="section-area expenses">
                                 <h2>Expenses</h2>
                                 <form action="">
                                     <!-- Food Expense -->
                                     <div class="input-area">
-                                        <label for="food" class="form-label">Food : </label>
-                                        <input type="text" class="form-control" id="food">
+                                        <label for="food-expense-input" class="form-label">Food : </label>
+                                        <input type="text" class="form-control" id="food-expense-input">
                                     </div>
 
                                     <!-- Rent Expense -->
                                     <div class="input-area">
-                                        <label for="rent" class="form-label">Rent : </label>
-                                        <input type="text" class="form-control" id="rent">
+                                        <label for="rent-expense-input" class="form-label">Rent : </label>
+                                        <input type="text" class="form-control" id="rent-expense-input">
                                     </div>
 
                                     <!-- Clothes Expense -->
                                     <div class="input-area">
-                                        <label for="clothes" class="form-label">Clothes : </label>
-                                        <input type="text" class="form-control" id="clothes">
+                                        <label for="clothes-expense-input" class="form-label">Clothes : </label>
+                                        <input type="text" class="form-control" id="clothes-expense-input">
                                     </div>
-                                    <button class="btn btn-warning py-2 px-4 my-4">Calculator</button>
+                                    <input type="button" value="Calculate" class="btn fw-semibold bg-warning py-2 px-4 my-4" id="calculate-btn">
                                     <div class="monthly-balance bg-info row my-4 mx-1">
                                         <div class="col-lg-6 col-sm-12 bg-danger rounded-start">
                                             <div class="d-flex justify-content-between  py-2 text-white ">
@@ -77,7 +77,7 @@
 
                                 <div class="save-area">
                                     <input type="text" class="form-control" id="save-input" placeholder="How percent amount do you want to save?">
-                                    <button class="bg-warning">Save</button>
+                                    <input class="bg-warning" type="button" value="Save">
                                 </div>
 
                                 <div class="monthly-balance row my-4 mx-1">
