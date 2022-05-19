@@ -98,10 +98,16 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
             console.log(clothesExpenseInput, "ERROR FOOD");
         } else {
             // const totalExpenses = foodExpenseInput + rentExpenseInput + clothesExpenseInput;
-            displayTotalExpenses.innerText = getTotalExpenses();
             let totalBalance = incomeInput - getTotalExpenses();
-            displayBalance.innerText = totalBalance;
-            expenseErrorArea.innerHTML = `<p id="expense-err"></p>`;
+            if (incomeInput < getTotalExpenses()) {
+                expenseErrorArea.innerHTML = `<p id="expense-err">
+                Your Expenses is more than your balance
+                </p>`;
+            } else {
+                displayTotalExpenses.innerText = getTotalExpenses();
+                displayBalance.innerText = totalBalance;
+                expenseErrorArea.innerHTML = `<p id="expense-err"></p>`;
+            }
         }
     }
 });
