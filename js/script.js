@@ -56,8 +56,8 @@ function getErrorMassage(err, id, field) {
     }
 }
 
-function isError(incomeInput) {
-    if (incomeInput == "NaN-inputed" || incomeInput == "empty-inputed" || incomeInput == "negative-value-inputed") {
+function isError(inputData) {
+    if (inputData == "NaN-inputed" || inputData == "empty-inputed" || inputData == "negative-value-inputed") {
         return true;
     } else {
         return false;
@@ -90,10 +90,10 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
         if (isError(foodExpenseInput)) {
             getErrorMassage(foodExpenseInput, "expense-err", "Food Expense");
             console.log(foodExpenseInput, "ERROR FOOD");
-        } else if (rentExpenseInput == "NaN-inputed" || rentExpenseInput == "empty-inputed" || rentExpenseInput == "negative-value-inputed") {
+        } else if (isError(rentExpenseInput)) {
             getErrorMassage(rentExpenseInput, "expense-err", "Rent Expense");
             console.log(rentExpenseInput, "ERROR FOOD");
-        } else if (clothesExpenseInput == "NaN-inputed" || clothesExpenseInput == "empty-inputed" || clothesExpenseInput == "negative-value-inputed") {
+        } else if (isError(clothesExpenseInput)) {
             getErrorMassage(clothesExpenseInput, "expense-err", "Clothes Expense");
             console.log(clothesExpenseInput, "ERROR FOOD");
         } else {
@@ -101,7 +101,7 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
             displayTotalExpenses.innerText = getTotalExpenses();
             let totalBalance = incomeInput - getTotalExpenses();
             displayBalance.innerText = totalBalance;
-            expenseErrorArea.innerHTML = "";
+            expenseErrorArea.innerHTML = `<p id="expense-err"></p>`;
         }
     }
 });
