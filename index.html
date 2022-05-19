@@ -31,9 +31,8 @@
                                 <h2>Income</h2>
                                 <label for="income-input" class="form-label">Income : </label>
                                 <input type="text" class="form-control" id="income-input" placeholder="Ex: 15000">
-                                <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center mt-2">
-                                    <p id="income-empty-err" class="d-none">Please Enter an amount</p>
-                                    <p id="income-nan-err" class="d-none">The amount allows only numbers.</p>
+                                <div id="income-error-area" class="error-massage text-danger fw-semibold fs-5 text-center mt-2">
+                                    <p id="income-err"></p>
                                 </div>
                             </div>
                             <div class="section-area expenses">
@@ -76,10 +75,8 @@
                                         </div>
                                     </div>
 
-                                    <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center d-none">
-                                        <p id="food-expense-err">Please Enter an amount for <span class="fw-bold">Food Expense.</span></p>
-                                        <p id="rent-expense-err">Please Enter an amount for <span class="fw-bold">Rent Expense.</span></p>
-
+                                    <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center">
+                                        <p id="expense-err"></p>
                                     </div>
 
                                 </form>
