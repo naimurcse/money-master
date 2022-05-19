@@ -30,7 +30,11 @@
                             <div class="section-area income">
                                 <h2>Income</h2>
                                 <label for="income-input" class="form-label">Income : </label>
-                                <input type="text" class="form-control" id="income-input">
+                                <input type="text" class="form-control" id="income-input" placeholder="Ex: 15000">
+                                <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center mt-2">
+                                    <p id="income-empty-err" class="d-none">Please Enter an amount</p>
+                                    <p id="income-nan-err" class="d-none">The amount allows only numbers.</p>
+                                </div>
                             </div>
                             <div class="section-area expenses">
                                 <h2>Expenses</h2>
@@ -52,7 +56,11 @@
                                         <label for="clothes-expense-input" class="form-label">Clothes : </label>
                                         <input type="text" class="form-control" id="clothes-expense-input">
                                     </div>
+
+                                    <!-- Calculate Btn -->
                                     <input type="button" value="Calculate" class="btn fw-semibold bg-warning py-2 px-4 my-4" id="calculate-btn">
+
+                                    <!-- Display Total Expenses and Balance -->
                                     <div class="monthly-balance bg-info row my-4 mx-1">
                                         <div class="col-lg-6 col-sm-12 bg-danger rounded-start">
                                             <div class="d-flex justify-content-between  py-2 text-white ">
@@ -67,6 +75,13 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center d-none">
+                                        <p id="food-expense-err">Please Enter an amount for <span class="fw-bold">Food Expense.</span></p>
+                                        <p id="rent-expense-err">Please Enter an amount for <span class="fw-bold">Rent Expense.</span></p>
+
+                                    </div>
+
                                 </form>
                             </div>
                             <div class="section-area save-amount">
