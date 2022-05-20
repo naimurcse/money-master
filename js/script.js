@@ -115,6 +115,7 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
 
 // Event handle by Save Btn
 document.getElementById("save-btn").addEventListener("click", function() {
+    const saveErrorArea = document.getElementById("save-error-area");
 
     // Get Value From Income Input Field
     const incomeInput = getValue("income");
@@ -142,6 +143,9 @@ document.getElementById("save-btn").addEventListener("click", function() {
             // Display Remaining Balance
             const remainingBalance = balanceAmount - savingAmount;
             displayRemainingBalance.innerText = remainingBalance;
+
+            // clear error
+            saveErrorArea.innerHTML = `<p id="expense-err"></p>`;
         }
     }
 
