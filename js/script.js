@@ -112,6 +112,7 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
     }
 });
 
+
 // Event handle by Save Btn
 document.getElementById("save-btn").addEventListener("click", function() {
 
