@@ -68,14 +68,14 @@
                                     <input type="button" value="Calculate" class="btn fw-semibold bg-warning py-2 px-4 my-4" id="calculate-btn">
 
                                     <!-- Display Total Expenses and Balance -->
-                                    <div class="monthly-balance bg-info row my-4 mx-1">
-                                        <div class="col-lg-6 col-sm-12 bg-danger rounded-start">
-                                            <div class="d-flex justify-content-between  py-2 text-white ">
-                                                <h5>Total Expenses: </h5>
+                                    <div class="monthly-balance row my-4 mx-1">
+                                        <div class="col-xl-6 col-lg-12 bg-danger rounded-start">
+                                            <div class="d-flex justify-content-between py-2 text-white ">
+                                                <h5>Total <span class="d-none d-sm-inline-block d-lg-none">Expenses:</span> <span class="d-none d-lg-inline-block">Exp:</span> </h5>
                                                 <h5 id="display-total-expenses">00</h5>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-sm-12  bg-success rounded-end rounded-sm">
+                                        <div class="col-xl-6 col-lg-12 bg-success rounded-end">
                                             <div class="d-flex justify-content-between py-2 text-white">
                                                 <h5>Balance:</h5>
                                                 <h5 id="display-balance">00</h5>
@@ -96,9 +96,10 @@
                                 <!-- Save Amount -->
                                 <label for="save-input" class="form-label">Save Amount : </label>
 
-                                <div class="save-area">
-                                    <input type="text" class="form-control" id="save-input" placeholder="How percent amount do you want to save?">
-                                    <input id="save-btn" class="bg-warning" type="button" value="Save">
+                                <div class="save-area d-flex">
+
+                                    <input type="text" class="rounded-start flex-fill" id="save-input" placeholder="How percent? ex: 10">
+                                    <input id="save-btn" class="bg-warning rounded-end" type="button" value="Save">
                                 </div>
 
                                 <div class="monthly-balance row my-4 mx-1">
