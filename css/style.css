@@ -1,10 +1,27 @@
+/* Image Area Start */
+
+.image-area {
+    padding: 10px;
+}
+
+.image-area img {
+    border-radius: 8px;
+}
+
 .buget-body {
-    background-color: #c1d4d6;
+    /* background-color: #c1d4d6; */
     border-radius: 15px;
 }
 
+.quote-area {
+    padding: 50px 10px;
+}
+
+
+/* Calculation Area Start */
+
 .calculation-area {
-    padding: 20px;
+    padding: 10px;
 }
 
 .section-area {
@@ -57,4 +74,20 @@
     padding: 10px;
     /* border-radius: 4px; */
     border: none;
+}
+
+
+/* Media Query */
+
+
+/* Small devices,Medium devices*/
+
+@media (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    .monthly-balance div {
+        border-radius: var(--bs-border-radius)!important;
+        /* border-radius: 10px; */
+    }
 }
