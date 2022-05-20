@@ -23,14 +23,22 @@
                 <h1 class="text-center py-4 fw-bold">Monthly CashDeal</h1>
                 <div class="row buget-body">
                     <div class="col-lg-6 col-sm-12">
-                        <!-- <img class="img-fluid" src="images/bg-money.jpg" alt="bg-money"> -->
+
+                        <!-- Image Area Start -->
+                        <div class="image-area">
+                            <!-- <img class="img-fluid" src="images/bg-money.jpg" alt="bg-money"> -->
+                        </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
-                        <div class="form-area">
+
+                        <!-- Calculation Area Start -->
+                        <div class="calculation-area">
                             <div class="section-area income">
                                 <h2>Income</h2>
                                 <label for="income-input" class="form-label">Income : </label>
                                 <input type="text" class="form-control" id="income-input" placeholder="Ex: 15000">
+
+                                <!-- Display Error of unnecessary input of Income -->
                                 <div id="income-error-area" class="error-massage text-danger fw-semibold fs-5 text-center mt-2">
                                     <p id="income-err"></p>
                                 </div>
@@ -75,6 +83,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- Display Error of unnecessary input of Experses -->
                                     <div id="experses-error-area" class="error-massage text-danger fw-semibold fs-5 text-center">
                                         <p id="expense-err"></p>
                                     </div>
@@ -106,8 +115,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                                <!-- Display Error of unnecessary input of Saving -->
+                                <div id="save-error-area" class="save-massage text-danger fw-semibold fs-5 text-center">
+                                    <p id="save-err"></p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -115,16 +115,33 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
 // Event handle by Save Btn
 document.getElementById("save-btn").addEventListener("click", function() {
 
-    // Get Value From Save Input Field
-    const saveInput = getValue("save");
-
     // Get Value From Income Input Field
     const incomeInput = getValue("income");
 
-    const totalBalance = incomeInput - getTotalExpenses();
+    // Get Balance Amount
+    const balanceAmount = getDisplayValue("balance");
+    console.log(balanceAmount);
 
-    const savingAmount = incomeInput * (saveInput / 100);
-    displaySavingAmount.innerText = savingAmount;
-    displayRemainingBalance.innerText = totalBalance - savingAmount;
+    // Get Value From Save Input Field
+    const saveInput = getValue("save");
+
+    if (isError(incomeInput)) {
+        getErrorMassage(incomeInput, "income-err", "Income");
+    } else if (isError(saveInput)) {
+        getErrorMassage(saveInput, "save-err", "Save");
+    } else {
+        const savingAmount = incomeInput * (saveInput / 100);
+
+        if (savingAmount >= balanceAmount) {
+            alert(`You won't save more than ${balanceAmount} TK`);
+        } else {
+            // Display Saving Amount
+            displaySavingAmount.innerText = savingAmount;
+
+            // Display Remaining Balance
+            const remainingBalance = balanceAmount - savingAmount;
+            displayRemainingBalance.innerText = remainingBalance;
+        }
+    }
 
 });

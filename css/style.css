@@ -3,7 +3,7 @@
     border-radius: 15px;
 }
 
-.form-area {
+.calculation-area {
     padding: 20px;
 }
 
@@ -19,17 +19,17 @@
     margin-bottom: 15px;
 }
 
-.form-area h2 {
+.calculation-area h2 {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 35px;
 }
 
-.form-area label {
+.calculation-area label {
     font-size: 20px;
 }
 
-.form-area input {
+.calculation-area input {
     font-size: 18px;
     padding: 10px 20px;
 }
