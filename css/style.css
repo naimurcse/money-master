@@ -8,10 +8,8 @@
     border-radius: 8px;
 }
 
-.buget-body {
-    /* background-color: #c1d4d6; */
-    border-radius: 15px;
-}
+
+/* Carosuel and Quote Area */
 
 .quote-area {
     padding: 50px 10px;
@@ -83,9 +81,6 @@
 /* Small devices,Medium devices*/
 
 @media (max-width: 1200px) {
-    body {
-        background-color: red;
-    }
     .monthly-balance div {
         border-radius: var(--bs-border-radius)!important;
         /* border-radius: 10px; */
